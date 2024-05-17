@@ -2,7 +2,21 @@
 
 All of our work will be stored on GitHub, so it is important to understand how to use it. 
 
+## Table of Contents
+
+1. [Convention](#1-convention)
+    1. [Issues](#11-issues)
+    2. [Branches](#12-branches)
+    3. [Commits](#13-commits)
+    4. [Pull Requests](#14-pull-requests)
+2. [Workflow](#2-workflow)
+    1. [Issues](#21-issues)
+    2. [Work on the issue](#22-work-on-the-issue)
+    3. [Pull Requests](#23-pull-requests)
+
 ## 1. Convention
+
+***IMPORTANT:*** Never push directly to `main`.
 
 ### 1.1 Issues
 
@@ -126,3 +140,162 @@ All of our work will be stored on GitHub, so it is important to understand how t
     - Use the "Squash and merge" option.
 
         You can leave the commit message as is or update it as needed.
+
+## 2. Workflow
+
+### 2.1. Issues
+
+1. Create a new issue.
+
+    - Click on the "Issues" tab.
+
+    ![Issues Tab](assets/issues-tab.png)
+
+    - Click on the "New issue" button.
+
+    ![New Issue Button](assets/new-issue-button.png)
+
+    - Fill in the issue title and body.
+
+    ![Issue Title and Body](assets/issue-title-and-body.png)
+
+    - Assign the issue to the appropriate team member.
+
+    ![Assignees](assets/assignees.png)
+
+    - Label the issue with at least one label.
+
+    ![Label](assets/label.png)
+
+    - Link the issue to a project.
+
+    ![Project](assets/project.png)
+
+    - Link the issue to a milestone.
+
+    ![Milestone](assets/milestone.png)
+
+    - Click on the "Submit new issue" button.
+
+    ![Submit New Issue Button](assets/submit-new-issue-button.png)
+
+2. Work on the issue.
+
+    - Create a new branch for the issue.
+
+    ![Create a Branch](assets/create-a-branch.png)
+
+    - Select "checkout locally" to create a local branch.
+
+    Double check the branch name, repository, and branch source.
+
+    ![Checkout Locally](assets/checkout-locally.png)
+
+    Then, click on the "Create branch" button.
+
+    - GitHub will prompt you to switch to the new branch.
+
+    ```sh
+    git fetch origin
+    git checkout 1-add-github-operstions-tutorial
+    ```
+
+    You can now work on the issue in your local environment.
+
+    > *Lance*: I just realized that I made a typo in the issue title. To avoid confusion I'll leave it as is.
+
+### 2.2 Work on the issue.
+
+This should be familiar to you after completing the previous two tutorials.
+
+> **Pushing and Pulling**
+> - Pushing refers to sending your committed changes from your local repository to a remote repository. The `git push` command is used for this purpose.
+>    ```sh
+>    git push <remote> <branch>
+>    ```
+>    - `<remote>`: The name of the remote repository (commonly origin).
+>    - `<branch>`: The name of the branch you want to push to.
+>
+>   Often, it is sufficient to use `git push` without specifying the remote and branch. This will push the changes to the remote repository and branch that you are currently tracking.
+> - Pulling is the process of fetching changes from the remote repository and merging them into your local repository. The `git pull` command combines git fetch and git merge.
+>    ```sh
+>    git pull <remote> <branch>
+>    ```
+>    - `<remote>`: The name of the remote repository (commonly origin).
+>    - `<branch>`: The name of the branch you want to pull from.
+>
+>   Often, it is sufficient to use `git pull` without specifying the remote and branch. This will pull changes from the remote repository and branch that you are currently tracking.
+> 
+> Workflow: pull, commit, push
+
+### 2.3. Pull Requests
+
+1. Create a new pull request.
+
+    - Click on the "Pull requests" tab.
+
+    ![Pull Requests Tab](assets/pull-requests-tab.png)
+
+    - Click on the "New pull request" button.
+
+    ![New Pull Request Button](assets/new-pull-request-button.png)
+
+    - Select the branch you want to merge into `main`.
+
+    ![Select Branch](assets/select-branch.png)
+
+    - Fill in the pull request title and body.
+
+    ![Pull Request Title and Body](assets/pull-request-title-and-body.png)
+
+    - Assign the pull request to the appropriate team member.
+
+    ![Assignees](assets/pr-assignees.png)
+
+    - Request a review from at least one other team member.
+
+    ![Reviewers](assets/reviewers.png)
+
+    - Click on the "Create pull request" button.
+
+    ![Create Pull Request Button](assets/create-pull-request-button.png)
+
+2. Review the pull request.
+
+    - Click on the "Files changed" tab.
+
+    ![Files Changed Tab](assets/files-changed-tab.png)
+
+    - Review the changes made in the pull request.
+
+    ![Files Changed](assets/files-changed.png)
+
+    - Leave comments on the pull request.
+
+    ![Comment](assets/comment.png)
+
+    - Approve the pull request if everything looks good.
+
+    ![Approve](assets/approve.png)
+
+3. Merge the pull request.
+
+    - Click on the "Merge pull request" button.
+
+    ![Merge Pull Request Button](assets/merge-pull-request-button.png)
+
+    - Select the "Squash and merge" option.
+
+    ![Squash and Merge](assets/squash-and-merge.png)
+
+    - Click on the "Confirm squash and merge" button.
+
+    ![Confirm Squash and Merge Button](assets/confirm-squash-and-merge-button.png)
+
+    - Click on the "Delete branch" button.
+
+    ![Delete Branch Button](assets/delete-branch-button.png)
+
+    - Click on the "Confirm" button.
+
+    ![Confirm Button](assets/confirm-button.png)
