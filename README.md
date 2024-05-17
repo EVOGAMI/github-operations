@@ -117,7 +117,7 @@ All of our work will be stored on GitHub, so it is important to understand how t
 
     - For music, always assign Lyndon. 
     
-        *To Lyndon: you can review the pull request yourself as you see fit.*
+        *To Lyndon: assign whoever you want to review your pull requests. Sorry for the inconvenience.*
 
 - When reviewing a pull request, you should check the following:
 
@@ -244,21 +244,21 @@ This should be familiar to you after completing the previous two tutorials.
 
     ![Select Branch](assets/select-branch.png)
 
+    - Click on the "Create pull request" button.
+
+    ![Create Pull Request Button](assets/create-pull-request-button.png)
+
     - Fill in the pull request title and body.
 
     ![Pull Request Title and Body](assets/pull-request-title-and-body.png)
 
-    - Assign the pull request to the appropriate team member.
+    - Assign the fields.
 
-    ![Assignees](assets/pr-assignees.png)
-
-    - Request a review from at least one other team member.
+    > Here since I'm the only one working on this issue, I'll leave the reviewers field empty.
 
     ![Reviewers](assets/reviewers.png)
 
-    - Click on the "Create pull request" button.
-
-    ![Create Pull Request Button](assets/create-pull-request-button.png)
+    Then, click on the "Create pull request" button.
 
 2. Review the pull request.
 
@@ -268,34 +268,40 @@ This should be familiar to you after completing the previous two tutorials.
 
     - Review the changes made in the pull request.
 
-    ![Files Changed](assets/files-changed.png)
-
     - Leave comments on the pull request.
 
-    ![Comment](assets/comment.png)
+        Hover over the line number where you want to leave a comment and click on the "+" button.
 
-    - Approve the pull request if everything looks good.
+    - Leave a comment, and/or approve the pull request if everything looks good.
+
+    ![Review Changes](assets/review-changes.png)
 
     ![Approve](assets/approve.png)
 
+    > Note that I made this PR, so I cannot approve it myself.
+
 3. Merge the pull request.
 
-    - Click on the "Merge pull request" button.
+    - Before merging, check for and resolve any merge conflicts.
+
+       - If there are merge conflicts, GitHub will display a message.
+
+       - Remember to always merge the latest changes from `main` into your branch before creating a pull request.
+
+       - If you see the following message, you are free from merge conflicts.
+
+    ![Merge Conflicts](assets/merge-conflicts.png)
+
+    - Click on the the arrow next to "Merge pull request" button, and select "Squash and merge".
 
     ![Merge Pull Request Button](assets/merge-pull-request-button.png)
-
-    - Select the "Squash and merge" option.
 
     ![Squash and Merge](assets/squash-and-merge.png)
 
     - Click on the "Confirm squash and merge" button.
 
+    Edit the commit message if needed.
+
     ![Confirm Squash and Merge Button](assets/confirm-squash-and-merge-button.png)
 
-    - Click on the "Delete branch" button.
-
-    ![Delete Branch Button](assets/delete-branch-button.png)
-
-    - Click on the "Confirm" button.
-
-    ![Confirm Button](assets/confirm-button.png)
+    - Optional: Delete the branch after merging.
