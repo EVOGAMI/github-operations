@@ -13,6 +13,7 @@ All of our work will be stored on GitHub, so it is important to understand how t
     1. [Issues](#21-issues)
     2. [Work on the issue](#22-work-on-the-issue)
     3. [Pull Requests](#23-pull-requests)
+3. [Try it Yourself](#try-it-yourself)
 
 ## 1. Convention
 
@@ -305,3 +306,39 @@ This should be familiar to you after completing the previous two tutorials.
     ![Confirm Squash and Merge Button](assets/confirm-squash-and-merge-button.png)
 
     - Optional: Delete the branch after merging.
+
+## Try it Yourself
+
+1. Create a new issue. 
+
+    - Title: `<Name>'s First Issue`
+    - Body: `This is my first issue.`
+    - Assignees: Yourself, Lance (LanceLi1416)
+    - Labels: `good first issue`, `documentation`
+    - Projects: Learning Git
+    - Milestone: `Learning Git and GitHub`
+
+2. Create a new branch for the issue.
+
+    - Branch name: `<name>-first-issue`. For example, `lance-first-issue`.
+
+   Then, checkout to the new branch.
+
+3. Make a change to `file.txt`. Add a new line with your name. Commit the change and push it to your branch.
+
+4. Create a new pull request.
+
+    - Title: `Resolve <issue number> - <Name>'s First Issue`
+    - Body: `I added my name to file.txt.`
+    - Reviewers: Lance (LanceLi1416), any team member
+    - Assignees: Yourself
+    - Labels: `good first issue`, `documentation`
+    - Projects: Learning Git
+    - Milestone: `Learning Git and GitHub`
+
+5. Making sure there are no merge conflicts, `squash and merge` the pull request.
+
+   Your changes should now be merged into `main`.
+
+
+***Congratulations! You now know how to use issues, branches, commits, and pull requests on GitHub!***
