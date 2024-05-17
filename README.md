@@ -2,7 +2,22 @@
 
 All of our work will be stored on GitHub, so it is important to understand how to use it. 
 
+## Table of Contents
+
+1. [Convention](#1-convention)
+    1. [Issues](#11-issues)
+    2. [Branches](#12-branches)
+    3. [Commits](#13-commits)
+    4. [Pull Requests](#14-pull-requests)
+2. [Workflow](#2-workflow)
+    1. [Issues](#21-issues)
+    2. [Work on the issue](#22-work-on-the-issue)
+    3. [Pull Requests](#23-pull-requests)
+3. [Try it Yourself](#try-it-yourself)
+
 ## 1. Convention
+
+***IMPORTANT:*** Never push directly to `main`.
 
 ### 1.1 Issues
 
@@ -103,7 +118,7 @@ All of our work will be stored on GitHub, so it is important to understand how t
 
     - For music, always assign Lyndon. 
     
-        *To Lyndon: you can review the pull request yourself as you see fit.*
+        *To Lyndon: assign whoever you want to review your pull requests. Sorry for the inconvenience.*
 
 - When reviewing a pull request, you should check the following:
 
@@ -126,3 +141,204 @@ All of our work will be stored on GitHub, so it is important to understand how t
     - Use the "Squash and merge" option.
 
         You can leave the commit message as is or update it as needed.
+
+## 2. Workflow
+
+### 2.1. Issues
+
+1. Create a new issue.
+
+    - Click on the "Issues" tab.
+
+    ![Issues Tab](assets/issues-tab.png)
+
+    - Click on the "New issue" button.
+
+    ![New Issue Button](assets/new-issue-button.png)
+
+    - Fill in the issue title and body.
+
+    ![Issue Title and Body](assets/issue-title-and-body.png)
+
+    - Assign the issue to the appropriate team member.
+
+    ![Assignees](assets/assignees.png)
+
+    - Label the issue with at least one label.
+
+    ![Label](assets/label.png)
+
+    - Link the issue to a project.
+
+    ![Project](assets/project.png)
+
+    - Link the issue to a milestone.
+
+    ![Milestone](assets/milestone.png)
+
+    - Click on the "Submit new issue" button.
+
+    ![Submit New Issue Button](assets/submit-new-issue-button.png)
+
+2. Work on the issue.
+
+    - Create a new branch for the issue.
+
+    ![Create a Branch](assets/create-a-branch.png)
+
+    - Select "checkout locally" to create a local branch.
+
+    Double check the branch name, repository, and branch source.
+
+    ![Checkout Locally](assets/checkout-locally.png)
+
+    Then, click on the "Create branch" button.
+
+    - GitHub will prompt you to switch to the new branch.
+
+    ```sh
+    git fetch origin
+    git checkout 1-add-github-operstions-tutorial
+    ```
+
+    You can now work on the issue in your local environment.
+
+    > *Lance*: I just realized that I made a typo in the issue title. To avoid confusion I'll leave it as is.
+
+### 2.2 Work on the issue.
+
+This should be familiar to you after completing the previous two tutorials.
+
+> **Pushing and Pulling**
+> - Pushing refers to sending your committed changes from your local repository to a remote repository. The `git push` command is used for this purpose.
+>    ```sh
+>    git push <remote> <branch>
+>    ```
+>    - `<remote>`: The name of the remote repository (commonly origin).
+>    - `<branch>`: The name of the branch you want to push to.
+>
+>   Often, it is sufficient to use `git push` without specifying the remote and branch. This will push the changes to the remote repository and branch that you are currently tracking.
+> - Pulling is the process of fetching changes from the remote repository and merging them into your local repository. The `git pull` command combines git fetch and git merge.
+>    ```sh
+>    git pull <remote> <branch>
+>    ```
+>    - `<remote>`: The name of the remote repository (commonly origin).
+>    - `<branch>`: The name of the branch you want to pull from.
+>
+>   Often, it is sufficient to use `git pull` without specifying the remote and branch. This will pull changes from the remote repository and branch that you are currently tracking.
+> 
+> Workflow: pull, commit, push
+
+### 2.3. Pull Requests
+
+1. Create a new pull request.
+
+    - Click on the "Pull requests" tab.
+
+    ![Pull Requests Tab](assets/pull-requests-tab.png)
+
+    - Click on the "New pull request" button.
+
+    ![New Pull Request Button](assets/new-pull-request-button.png)
+
+    - Select the branch you want to merge into `main`.
+
+    ![Select Branch](assets/select-branch.png)
+
+    - Click on the "Create pull request" button.
+
+    ![Create Pull Request Button](assets/create-pull-request-button.png)
+
+    - Fill in the pull request title and body.
+
+    ![Pull Request Title and Body](assets/pull-request-title-and-body.png)
+
+    - Assign the fields.
+
+    > Here since I'm the only one working on this issue, I'll leave the reviewers field empty.
+
+    ![Reviewers](assets/reviewers.png)
+
+    Then, click on the "Create pull request" button.
+
+2. Review the pull request.
+
+    - Click on the "Files changed" tab.
+
+    ![Files Changed Tab](assets/files-changed-tab.png)
+
+    - Review the changes made in the pull request.
+
+    - Leave comments on the pull request.
+
+        Hover over the line number where you want to leave a comment and click on the "+" button.
+
+    - Leave a comment, and/or approve the pull request if everything looks good.
+
+    ![Review Changes](assets/review-changes.png)
+
+    ![Approve](assets/approve.png)
+
+    > Note that I made this PR, so I cannot approve it myself.
+
+3. Merge the pull request.
+
+    - Before merging, check for and resolve any merge conflicts.
+
+       - If there are merge conflicts, GitHub will display a message.
+
+       - Remember to always merge the latest changes from `main` into your branch before creating a pull request.
+
+       - If you see the following message, you are free from merge conflicts.
+
+    ![Merge Conflicts](assets/merge-conflicts.png)
+
+    - Click on the the arrow next to "Merge pull request" button, and select "Squash and merge".
+
+    ![Merge Pull Request Button](assets/merge-pull-request-button.png)
+
+    ![Squash and Merge](assets/squash-and-merge.png)
+
+    - Click on the "Confirm squash and merge" button.
+
+    Edit the commit message if needed.
+
+    ![Confirm Squash and Merge Button](assets/confirm-squash-and-merge-button.png)
+
+    - Optional: Delete the branch after merging.
+
+## Try it Yourself
+
+1. Create a new issue. 
+
+    - Title: `<Name>'s First Issue`
+    - Body: `This is my first issue.`
+    - Assignees: Yourself, Lance (LanceLi1416)
+    - Labels: `good first issue`, `documentation`
+    - Projects: Learning Git
+    - Milestone: `Learning Git and GitHub`
+
+2. Create a new branch for the issue.
+
+    - Branch name: `<name>-first-issue`. For example, `lance-first-issue`.
+
+   Then, checkout to the new branch.
+
+3. Make a change to `file.txt`. Add a new line with your name. Commit the change and push it to your branch.
+
+4. Create a new pull request.
+
+    - Title: `Resolve <issue number> - <Name>'s First Issue`
+    - Body: `I added my name to file.txt.`
+    - Reviewers: Lance (LanceLi1416), any team member
+    - Assignees: Yourself
+    - Labels: `good first issue`, `documentation`
+    - Projects: Learning Git
+    - Milestone: `Learning Git and GitHub`
+
+5. Making sure there are no merge conflicts, `squash and merge` the pull request.
+
+   Your changes should now be merged into `main`.
+
+
+***Congratulations! You now know how to use issues, branches, commits, and pull requests on GitHub!***
