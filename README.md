@@ -106,19 +106,19 @@ All of our work will be stored on GitHub, so it is important to understand how t
 
     I will set up a template for the pull request body.
 
-- Each pull request should be reviewed by at least one other team member.
+- ~~Each pull request should be reviewed by at least one other team member.~~
 
-    I will configure the repository to require at least one review before a pull request can be merged.
+    ~~I will configure the repository to require at least one review before a pull request can be merged.~~
 
-    If you are reviewing a pull request, you should leave comments on the pull request.
+    ~~If you are reviewing a pull request, you should leave comments on the pull request.~~
 
-    - For art, assign at least one art student to review the pull request.
+    ~~- For art, assign at least one art student to review the pull request.~~
 
-    - For cs, assign at least one CS student to review the pull request.
+    ~~- For cs, assign at least one CS student to review the pull request.~~
 
-    - For music, always assign Lyndon. 
-    
-        *To Lyndon: assign whoever you want to review your pull requests. Sorry for the inconvenience.*
+    ~~- For music, always assign Lyndon.~~
+
+    Do not assign reviewers for now. Communicate on Discord.
 
 - When reviewing a pull request, you should check the following:
 
@@ -255,7 +255,7 @@ This should be familiar to you after completing the previous two tutorials.
 
     - Assign the fields.
 
-    > Here since I'm the only one working on this issue, I'll leave the reviewers field empty.
+    ~~> Here since I'm the only one working on this issue, I'll leave the reviewers field empty.~~
 
     ![Reviewers](assets/reviewers.png)
 
@@ -330,7 +330,7 @@ This should be familiar to you after completing the previous two tutorials.
 
     - Title: `Resolve <issue number> - <Name>'s First Issue`
     - Body: `I added my name to file.txt.`
-    - Reviewers: Lance (LanceLi1416), any team member
+    - ~~Reviewers: Lance (LanceLi1416), any team member~~
     - Assignees: Yourself
     - Labels: `good first issue`, `documentation`
     - Projects: Learning Git
